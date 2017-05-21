@@ -17,7 +17,7 @@
 # along with PyGL2D.  If not, see <http://www.gnu.org/licenses/>.
 #===============================================================================
 
-import image
+from . import image
 import pygame
 
 from OpenGL.GL import *

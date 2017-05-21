@@ -24,7 +24,7 @@ def rotate_point(point, center_point, angle):
     """
     
     p = [point[0] - center_point[0], point[1] - center_point[1]]
-    print p, center_point
+    print(p, center_point)
     x = int(p[0] * math.cos(math.radians(-angle)) - p[1] * math.sin(math.radians(-angle)))
     y = int(p[0] * math.sin(math.radians(-angle)) + p[1] * math.cos(math.radians(-angle)))
     x += center_point[0]
@@ -104,9 +104,9 @@ def poly_collision(poly1, poly2):
     
     lines1 = []
     lines2 = []
-    for n in xrange(len(poly1)):
+    for n in range(len(poly1)):
         lines1.append([poly1[n - 1], poly1[n]])
-    for n in xrange(len(poly2)):
+    for n in range(len(poly2)):
         lines2.append([poly2[n - 1], poly2[n]])
     for l1 in lines1:
         for l2 in lines2:

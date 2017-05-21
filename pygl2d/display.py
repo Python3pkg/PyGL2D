@@ -53,7 +53,8 @@ def end_draw():
     disable2D()
     pygame.display.flip()
     
-def enable2D((width, height)):
+def enable2D(xxx_todo_changeme):
+    (width, height) = xxx_todo_changeme
     glMatrixMode(GL_PROJECTION)
     glPushMatrix()
     glLoadIdentity()

@@ -36,7 +36,7 @@ while running:
             if e.key == K_ESCAPE:
                 running = 0
    
-    print "Drawing 1000 images at",int(clock.get_fps()),"fps"
+    print("Drawing 1000 images at",int(clock.get_fps()),"fps")
     pygl2d.window.begin_draw(screen_size)
     for i in range(1000):
         image.draw([0, 0])

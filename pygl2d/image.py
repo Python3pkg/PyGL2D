@@ -180,4 +180,4 @@ def load_xbm(filename):
 		filename.seek(0)
 		data = filename.read().replace(s.group(0), "").replace("{", "").replace("}", "").replace(";", "")
 		filename.close()
-		return map(lambda x: int(x, 16), "".join(data.split()).split(","))
+		return [int(x, 16) for x in "".join(data.split()).split(",")]
